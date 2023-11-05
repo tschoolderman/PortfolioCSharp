@@ -1,3 +1,4 @@
+/*#region General settings*/
 html {
     position: relative;
     min-height: 100%;
@@ -26,12 +27,33 @@ h4 {
     color: rgba(0, 207, 93, 1);
     text-align: right;
 }
+/*#endregion*/
 
-.btn:hover,
-.nav-link:hover {
-    color: rgba(0, 207, 93, 1);
+/*#region Specific body sections settings*/
+.parallax-block {
+    min-height: 100vh;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+}
+/*#endregion*/
+
+/*#region Header settings*/
+.nav-link {
+    color: rgb(200, 200, 200);
 }
 
+    .navbar-brand,
+    .nav-link:hover,
+    .navbar-brand:hover {
+        color: rgba(0, 207, 93, 1);
+    }
+
+.nav-item {
+    text-align: center;
+}
+/*#endregion*/
+
+/*#region Button settings*/
 .btn-danger {
     font-size: 24px;
     font-weight: bold;
@@ -40,6 +62,20 @@ h4 {
     border-radius: 12px;
 }
 
+.btn:hover {
+    color: rgba(0, 207, 93, 1);
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000; /* Make sure that the button is always on top of other elements */
+}
+/*#endregion*/
+
+/*#region Accordion settings*/
 .accordion-button.show,
 .accordion-button {
     background-color: rgba(17, 26, 40, 1);
@@ -68,15 +104,9 @@ h4 {
     background-color: rgba(17, 26, 40, 1);
     color: rgb(200, 200, 200);
 }
+/*#endregion*/
 
-#btn-back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    z-index: 1000; /* Make sure that the button is always on top of other elements */
-}
-
+/*#region Card settings*/
 .card {
     text-align: center;
     border-color: rgba(0, 207, 93, 1);
@@ -84,22 +114,22 @@ h4 {
     border-width: 3px;
 }
 
-.navbar-brand {
-    color: rgba(0, 207, 93, 255);
+#portfolio-card {
+    text-align: justify;
 }
+/*#endregion*/
 
-.nav-item {
-    text-align: center;
-}
-
+/*#region Footer settings*/
 .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     white-space: nowrap;
-    line-height: 50px;
+    line-height: 80px;
 }
+/*#endregion*/
 
+/*#region Form settings*/
 .form-control {
     background-color: rgba(255, 255, 255, .9);
     border-width: 3px;
@@ -110,29 +140,15 @@ h4 {
         border-color: rgba(0, 207, 93, 1);
         border-width: 3px;
     }
+/*#endregion*/
 
-.parallax-block {
-    min-height: 100vh;
-    padding-top: 25vh;
-    padding-bottom: 25vh;
-}
-
-#portfolio-card {
-    text-align: justify;
-}
-
-@media (max-width: 576px) {
-
-    .custom-smaller-div {
-        width: 100%;
-        font-size: 12px;
-    }
-}
-
+/*#region Footnote settings*/
 .footnote {
     font-size: 8px;
 }
+/*#endregion*/
 
+/*#region Table settings*/
 .post-table {
     max-height: 50vh;
     overflow-y: auto;
@@ -157,26 +173,24 @@ h4 {
         background-color: rgba(70, 90, 115, 0.2);
     }
 
-.col1 {
-    flex: 1;
-}
-
-.col2 {
+.col1,
+.col2,
+.col4 {
     flex: 1;
 }
 
 .col3 {
     flex: 5;
 }
+/*#endregion*/
 
-.col4 {
-    flex: 1;
-}
-
+/*#region Modal settings*/
 .modal {
     top: 15vh;
 }
+/*#endregion*/
 
+/*#region Scrollbar settings*/
 .scroll-progress-container {
     position: fixed;
     top: 54px;
@@ -192,3 +206,14 @@ h4 {
     width: 0;
     transition: width 0.05s ease-in-out;
 }
+/*#endregion*/
+
+/*#region Device settings (phone)*/
+@media (max-width: 576px) {
+
+    .custom-smaller-div {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+/*#endregion*/
