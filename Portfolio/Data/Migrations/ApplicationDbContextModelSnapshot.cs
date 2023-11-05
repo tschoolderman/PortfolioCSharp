@@ -8,7 +8,7 @@ using System;
 
 namespace Portfolio.Data.Migrations
 {
-    [DbContext(typeof(DbContext))]
+    [DbContext(typeof(PortfolioContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
