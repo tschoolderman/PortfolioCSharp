@@ -9,7 +9,7 @@ using System;
 
 namespace Portfolio.Data.Migrations
 {
-    [DbContext(typeof(PortfolioContext))]
+    [DbContext(typeof(DbContext))]
     [Migration("00000000000000_CreateIdentitySchema")]
     partial class CreateIdentitySchema
     {
