@@ -18,6 +18,11 @@ namespace Portfolio.Controllers
             return View();
         }
 
+        public IActionResult Magic()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

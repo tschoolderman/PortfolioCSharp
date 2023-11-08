@@ -43,12 +43,12 @@ h4 {
 }
 
     .navbar-brand,
-    .nav-link:hover,
-    .navbar-brand:hover {
+    .nav-link:hover {
         color: rgb(0, 207, 93);
     }
 
 .nav-item {
+    color: rgb(0, 207, 93);
     text-align: center;
 }
 
